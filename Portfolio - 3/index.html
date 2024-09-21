@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Camerin's Portfolio</title>
+        <script src="/main.js"></script>
+        <link rel="stylesheet" href="styles.css">
+        <style>
+            .background{
+                background-image: url("images/landscape1.jpg");
+            }
+        </style>
+    </head>
+    <body>
+        <button id="button">Change Background</button>
+        <div class="background" id="bg">
+            
+        <div class="welcome">
+        <h1 class="name">Camerin Graeff</h1>
+
+        <h3 class="job-title">Software Engineer | Web Developer | UI/UX designer</h4>
+           <div class="details"><details > More about me information <br>
+             ldskjfds ksldfj<br> 
+             ldskjfds ksldfj<br> ldskjfds ksldfj<br> ldskjfds ksldfj<br> ldskjfds ksldfj<br> ldskjfds ksldfj<br> ldskjfds ksldfj</details></div> 
+        </div>
+        
+        <div class="tiles">
+
+        <div class="tile-bg 1">
+            <div class=" tile 1"> 
+                <h2>Project 1</h2>
+                <div class="projectimage t2"></div>
+            <div class="about 2"><p>This section is to write a small blurb about the project</p></div>
+            </div>
+        </div>
+        <div class="tile-bg t2">
+        <div class="tile t2">
+            <h2>Project 2</h2>
+            <div class="projectimage t2"></div>
+            <div class="about 2"><p>This section is to write a small blurb about the project</p></div>
+        </div>
+    </div>
+    <div class="tile-bg 3">
+        <div class="tile 3">
+            <h2>Project 3</h2>
+            <div class="projectimage t3"></div>
+            <div class="about 2"><p>This section is to write a small blurb about the project</p></div>
+        </div>
+    </div>
+
+</div>
+       <div class="contact-container"> 
+        <div class="contact"><h2 class="z">Contact</h2>
+            <div class="contact-icons">
+                <div class="hidden"><li>|</li></div>
+                <div class="hidden">|</div>
+                <div class="hidden">|</div>
+            </div>
+</div>
+
+</div>
+<script src="/main.js">
+    var bgImages = [
+    "images/landscape1.jpg",
+    "images/landscape2.jpg",
+    "images/landscape3.jpg",
+    "images/landscape4.jpg",
+    "images/landscape5.jpg"
+];
+
+
+var i = 0;
+
+
+document.getElementById('button').addEventListener('click', function () {
+  if(i<=bgImages.length-2){
+    i= ++i;
+  }
+  else{
+    i=0;
+  }
+
+  document.getElementById('bg').style.backgroundImage = bgImages[i];
+});
+</script>
+    </body>
+    
+</html>
